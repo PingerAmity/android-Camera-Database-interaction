@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rohan.camerabase.WelcomeActivity"
+    android:orientation="horizontal"
+    android:background="@color/Green">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_horizontal_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"></LinearLayout>
+        <RelativeLayout
+            android:id="@+id/ll_vertical_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Sign Up Now!"
+                android:textStyle="bold"
+                android:textColor="@color/White"
+                android:id="@+id/tv_su_title"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:id="@+id/tv_su_name"
+                android:textColor="@color/White"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/tv_su_title"
+                android:layout_toLeftOf="@+id/tv_su_title"
+                android:layout_toStartOf="@+id/tv_su_title" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:textColor="@color/White"
+                android:id="@+id/et_su_name"
+                android:layout_below="@+id/tv_su_name"
+                android:layout_alignLeft="@+id/tv_su_name"
+                android:layout_alignStart="@+id/tv_su_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textColor="@color/White"
+                android:id="@+id/tv_su_age"
+                android:layout_below="@+id/et_su_name"
+                android:layout_alignLeft="@+id/et_su_name"
+                android:layout_alignStart="@+id/et_su_name" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/et_su_age"
+                android:textColor="@color/White"
+                android:layout_below="@+id/tv_su_age"
+                android:layout_alignLeft="@+id/tv_su_age"
+                android:layout_alignStart="@+id/tv_su_age"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:id="@+id/tv_su_email"
+                android:textColor="@color/White"
+                android:layout_below="@+id/et_su_age"
+                android:layout_alignLeft="@+id/et_su_age"
+                android:layout_alignStart="@+id/et_su_age" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:textColor="@color/White"
+                android:id="@+id/et_su_email"
+                android:layout_below="@+id/tv_su_email"
+                android:layout_alignLeft="@+id/tv_su_email"
+                android:layout_alignStart="@+id/tv_su_email"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Username"
+                android:textColor="@color/White"
+                android:id="@+id/tv_su_username"
+                android:layout_below="@+id/et_su_email"
+                android:layout_alignLeft="@+id/et_su_email"
+                android:layout_alignStart="@+id/et_su_email" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_su_usermane"
+                android:textColor="@color/White"
+                android:layout_below="@+id/tv_su_username"
+                android:layout_alignLeft="@+id/tv_su_username"
+                android:layout_alignStart="@+id/tv_su_username"
+                android:layout_alignRight="@+id/et_su_email"
+                android:layout_alignEnd="@+id/et_su_email" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Password"
+                android:textColor="@color/White"
+                android:id="@+id/textView"
+                android:layout_below="@+id/et_su_usermane"
+                android:layout_alignLeft="@+id/et_su_usermane"
+                android:layout_alignStart="@+id/et_su_usermane" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/White"
+                android:ems="10"
+                android:id="@+id/et_su_password"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="@color/White"
+                android:background="@color/DarkGreen"
+                android:id="@+id/btn_signup"
+                android:layout_below="@+id/et_su_password"
+                android:layout_marginTop="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"></LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"></LinearLayout>
+
+
+
+
+</LinearLayout>

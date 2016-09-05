@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rohan.camerabase.WelcomeActivity"
+    android:orientation="horizontal"
+    android:background="@color/Green">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_horizontal_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_vertical_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RelativeLayout
+                android:id="@+id/inner_box"
+                android:layout_width="300dp"
+                android:layout_height="350dp">
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="@color/White"
+                    android:layout_marginTop="83dp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_w_username"
+                    android:textColor="@color/White"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_username"
+                    android:layout_alignLeft="@+id/tv_username"
+                    android:layout_alignStart="@+id/tv_username" />
+
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:textColor="@color/White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:layout_below="@+id/et_w_username"
+                    android:layout_alignLeft="@+id/et_w_username"
+                    android:layout_alignStart="@+id/et_w_username" />
+
+                <EditText
+                    android:id="@+id/et_w_password"
+                    android:textColor="@color/White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:layout_below="@+id/tv_password"
+                    android:layout_alignLeft="@+id/tv_password"
+                    android:layout_alignStart="@+id/tv_password" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:id="@+id/btn_login"
+                    android:textColor="@color/White"
+                    android:background="@color/DarkGreen"
+                    android:layout_below="@+id/et_w_password"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an Account yet? Create One"
+                    android:id="@+id/tv_create_account"
+                    android:textColor="@color/White"
+                    android:layout_below="@+id/btn_login"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="28dp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/iv_camera"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_camera_alt_black_24dp"
+                    android:layout_alignParentTop="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"></LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"></LinearLayout>
+
+
+
+
+</LinearLayout>
